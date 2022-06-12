@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+    &__logo-img{
+        max-height: 40px;
+    }
+    &__nav{
+        &-link{
+            color: var(--tui-base-09);
+            text-decoration: none;
+            font: var(--tui-font-text-xl);
+            &+&{
+                margin-left: 1rem;
+            }
+        }
+    }
+}
