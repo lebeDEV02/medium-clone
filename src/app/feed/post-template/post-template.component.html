@@ -1,0 +1,48 @@
+<ng-container *ngFor="let post of posts">
+  <div class="post">
+    <div class="post__header tui-space_top-2">
+      <div class="post__header-author" [class.tui-skeleton]="isSkeletonVisible">
+        <img
+          [src]="post.author_img"
+          alt=""
+          class="author-img"
+          [class.tui-skeleton]="isSkeletonVisible"
+        />
+        <span
+          class="author-name tui-text_h6 tui-space_left-1"
+          [class.tui-skeleton]="isSkeletonVisible"
+          >{{ post.author }}</span
+        >
+      </div>
+      <div
+        class="post__header-date tui-space_left-1"
+        [class.tui-skeleton]="isSkeletonVisible"
+      >
+        <time>{{ post.written_at | date }}</time>
+      </div>
+    </div>
+    <div class="post__body tui-space_top-2">
+      <div class="post__text">
+        <h5
+          class="post__title tui-text_h5"
+          [class.tui-skeleton]="isSkeletonVisible"
+        >
+          {{ post.title }}
+        </h5>
+        <p
+          class="post__description tui-text_body-l tui-space_top-1"
+          [class.tui-skeleton]="isSkeletonVisible"
+        >
+          {{ post.description }}
+        </p>
+      </div>
+      <div
+        class="post__img tui-space_left-5"
+        [class.tui-skeleton]="isSkeletonVisible"
+      >
+        <img [src]="post.post_img" alt="" />
+      </div>
+    </div>
+    <div class="post__footer"></div>
+  </div>
+</ng-container>

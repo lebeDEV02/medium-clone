@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FeedComponent } from './feed/feed.component';
 import { AllPostsComponent } from './all-posts/all-posts.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
+import { PostTemplateComponent } from './post-template/post-template.component';
 
 
 
@@ -11,7 +12,8 @@ import { MyPostsComponent } from './my-posts/my-posts.component';
   declarations: [
     FeedComponent,
     AllPostsComponent,
-    MyPostsComponent
+    MyPostsComponent,
+    PostTemplateComponent
   ],
   imports: [
     CommonModule,

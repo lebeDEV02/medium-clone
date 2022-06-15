@@ -1,19 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { delay } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FetchPostsService {
-
-
-  fetchUserPosts(){
-    return this.httpClient.get('http://localhost:3000/posts?author=Vova')
+  fetchUserPosts() {
+    return this.httpClient.get('http://localhost:3000/posts?author=Vova');
   }
 
-  fetchAllPosts(){
-    return this.httpClient.get('http://localhost:3000/posts')
+  fetchAllPosts() {
+    return this.httpClient.get('http://localhost:3000/posts');
   }
 
-  constructor(private readonly httpClient: HttpClient) { }
+  constructor(private readonly httpClient: HttpClient) {}
 }
