@@ -1,0 +1,39 @@
+{
+    "usersCredentials": [
+        {
+            "username": "vova",
+            "password": "123"
+        },
+        {
+            "username": "admin",
+            "password": "sadmin"
+        }
+    ], 
+    "posts": [
+        {
+            "author": "Vova",
+            "title": "Which smartphone is the best in the middle of 2022?",
+            "description": "Surely, it is Realme GT NEO 3!"
+        },
+        {
+            "author": "ooo",
+            "title": "alejlajfdljsdaf;lkj",
+            "description": "asfisaodifpsdofaskjflsdkajf"
+        },
+        {
+            "author": "ooo",
+            "title": "alejlajfdljsdaf;lkj",
+            "description": "asfisaodifpsdofaskjflsdkajf"
+        },
+        {
+            "author": "ooo",
+            "title": "alejlajfdljsdaf;lkj",
+            "description": "asfisaodifpsdofaskjflsdkajf"
+        },
+        {
+            "author": "Vova",
+            "title": "alejlajfdljsdaf;lkj",
+            "description": "asfisaodifpsdofaskjflsdkajf"
+        }
+    ]
+}

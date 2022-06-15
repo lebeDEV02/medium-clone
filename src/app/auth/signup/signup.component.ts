@@ -1,4 +1,4 @@
-import { FormValidationService } from '../services/form-validation.service';
+import { FormValidationService } from '../services/form-validation/form-validation.service';
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
 import { TuiAlertService } from '@taiga-ui/core';
@@ -24,7 +24,6 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log('succesfully signed up!');
   }
 
 }

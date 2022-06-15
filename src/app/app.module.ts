@@ -1,3 +1,5 @@
+import { FeedRoutingModule } from './feed/feed-routing.module';
+import { FeedModule } from './feed/feed.module';
 import { NgDompurifySanitizer } from '@tinkoff/ng-dompurify';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -20,6 +22,7 @@ import { TuiInputPasswordModule } from '@taiga-ui/kit';
 import { SignupComponent } from './auth/signup/signup.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LoginComponent, SignupComponent, HeaderComponent, FooterComponent],
@@ -34,6 +37,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     TuiInputModule,
     TuiButtonModule,
     TuiInputPasswordModule,
+    HttpClientModule,
+    FeedModule,
+    FeedRoutingModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],

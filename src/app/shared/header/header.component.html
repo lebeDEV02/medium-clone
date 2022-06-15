@@ -2,8 +2,16 @@
     <a routerLink="/" class="header__logo">
         <img class="header__logo-img" src="/assets/images/logo.png">
     </a>
-    <nav class="header__nav">
-        <a class="header__nav-link" routerLink="/login" tuiLink>Log In</a>
-        <a class="header__nav-link" routerLink="/signup" tuiLink>Sign Up</a>
+    <ng-container *ngIf="!isUserLoggedIn; else authorizedNavigation">
+        <nav class="header__nav">
+            <a class="header__nav-link" routerLink="/login" tuiLink>Log In</a>
+            <a class="header__nav-link" routerLink="/signup" tuiLink>Sign Up</a>
+        </nav>
+    </ng-container>
+    <ng-template #authorizedNavigation>
+        <nav>
+        <a class="header__nav-link" routerLink="/feed">My Feed</a>
+        <a class="header__nav-link" routerLink="/logout">Log Out</a>
     </nav>
+    </ng-template>
 </header>

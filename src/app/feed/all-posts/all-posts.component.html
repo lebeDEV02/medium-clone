@@ -1,0 +1,10 @@
+<h1>List of all posts</h1>
+<ng-container *ngFor="let post of allPosts">
+    <div>
+        <pre>{{post.author}}</pre>
+        <div>
+            <h5>{{post.title}}</h5>
+            <p>{{post.description}}</p>
+        </div>
+    </div>
+</ng-container>
